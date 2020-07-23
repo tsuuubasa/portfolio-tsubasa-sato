@@ -1,0 +1,173 @@
+@charset"UTF-8";
+
+::-webkit-scrollbar	{display: none;
+      			 -webkit-appearance: none}
+
+body	{margin: 0;
+	 padding: 0;
+	 font-family:'Tahoma',Gothic}
+
+/*ヘッダー画像*/
+.toping		{max-width: 100%;
+ 		 height: auto;
+  		 vertical-align: bottom}
+
+/*ボックスの設定*/
+.box2	{background-color: #000000;
+	 width: 100%;
+	 margin-left: auto;
+	 margin-right: auto}
+
+.box2-1,.box2-2,.box2-3,.box2-4		{background-color: #C7ECD1;
+					 height: 300px}
+
+.box3	{padding-top: 20px;
+	 background-color: ##C7ECD1}
+
+
+/*box2内カテゴリー*/
+.mylogo 	{width: 480px;
+   		 height: 280px;
+ 		 background-color: #ffffff}
+
+.bar 		{width: 480px;
+   		 height: 280px;
+ 		 background-color: #ffffff}
+
+.hobby 		{width: 480px;
+   		 height: 280px;
+ 		 background-color: #ffffff}
+
+.unfinished 	{width: 480px;
+   		 height: 280px;
+ 		 background-color: #ffffff}
+
+/*box2ボックスを重ねる設定*/
+.box2-1		{position: relative}
+
+.mylogo		{position: absolute;
+ 		 top: 60%;
+    		 left: 50%;
+   		 transform: translate(-50%, -60%);
+    		 -webkit-transform: translate(-50%, -60%);
+    		 -ms-transform: translate(-50%, -60%)}
+.box2-2		{position: relative}
+
+.bar		{position: absolute;
+ 		 top: 60%;
+    		 left: 50%;
+   		 transform: translate(-50%, -60%);
+    		 -webkit-transform: translate(-50%, -60%);
+    		 -ms-transform: translate(-50%, -60%)}
+.box2-3		{position: relative}
+
+.hobby		{position: absolute;
+ 		 top: 30%;
+    		 left: 50%;
+   		 transform: translate(-50%, -30%);
+    		 -webkit-transform: translate(-50%, -30%);
+    		 -ms-transform: translate(-50%, -30%)}
+.box2-4		{position: relative}
+
+.unfinished	{position: absolute;
+ 		 top: 30%;
+    		 left: 50%;
+   		 transform: translate(-50%, -30%);
+    		 -webkit-transform: translate(-50%, -30%);
+    		 -ms-transform: translate(-50%, -30%)}
+
+	
+/*box3ボックスを重ねる設定*/
+.box3-1		{position: relative}
+
+.me		{position: absolute;
+                 bottom: 0;
+   		 right: 220px}
+
+.box3-2		{position: relative}
+
+.ig		{position: absolute;
+ 		 bottom: 0;
+ 		 right: 100px}
+
+/*box3アイコン*/
+.me		{width: 80px;
+   		 height: 40px;
+ 		 background-color: #77CCA7;
+		 color: #000000}
+
+
+.ig		{width: 80px;
+   		 height: 40px;
+ 		 background-color: #77CCA7;
+		 color: #000000}
+/*box3のスペース*/
+.box3		{padding:0}
+
+.box3-1,.box3-2		{margin-bottom: 0}
+
+/*########## 999px以下 ##########*/
+@media (max-width: 999px){
+
+/*box2-1のスペース調整*/
+.box2-1		{padding-top: 5%}
+
+.box2-2		{padding-top: 3%}
+
+.box2-3		{padding-top: 3%}
+
+.box2-4		{padding-top: 3%}
+
+/*box3上のスペース*/
+.box3-1		{padding-top: 20px}
+
+}
+
+/*########## 1000px以上 ##########*/
+@media (min-width: 1000px){
+
+/*box2を横に並べる設定*/
+.box2:after	{content: "";
+		 display: block;
+ 	 	 clear: both}
+	
+.box2-1		{float: left;
+                width: 50%; 
+ 		height: 500px}	
+
+.box2-2		{float: left;
+		 width: 50%;
+                 height: 500px}
+
+.box2-3		{float: left;
+		 width: 50%;
+                 height: 500px}
+
+.box2-4		{float: left;
+		 width: 50%;
+                 height: 500px}
+
+
+/*box2カテゴリー*/
+.mylogo		{width: 480px;
+   		 height: 280px;
+ 		 background-color: #ffffff}
+
+.bar		{width: 480px;
+   		 height: 280px;
+ 		 background-color: #ffffff}
+
+.hobby		{width: 480px;
+   		 height: 280px;
+ 		 background-color: #ffffff}
+
+.unfinished	{width: 480px;
+   		 height: 280px;
+ 		 background-color: #ffffff}
+
+.mylogo,.bar,.hobby,.unfinished		{margin-left: auto;
+					 margin-right: auto}
+
+/*box3の上スペース*/
+.box3		{margin-top: 0px}
+
